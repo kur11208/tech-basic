@@ -1,0 +1,6 @@
+﻿name = input("名前を入力してください: ")
+age = int(input("年齢を入力してください: "))
+money = int(input("所持金を入力してください:"))
+print("こんにちは、" + name + "さん")
+print("あなたは来年", age + 1, "歳です")
+print("1000円もらうと", money + 1000, "円です")
