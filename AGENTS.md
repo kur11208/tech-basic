@@ -266,11 +266,11 @@ Day 30：就活用成果物化
 
 
 
-現在は \*\*Day 15：HTML表示の開始\*\*。
+現在は \*\*Day 16：画面整備の開始\*\*。
 
 
 
-Day 0、Day 1、Day 2、Day 3、Day 4、Day 5、Day 6、Day 7、Day 8、Day 9、Day 10、Day 11、Day 12、Day 13、Day 14は完了済み。
+Day 0、Day 1、Day 2、Day 3、Day 4、Day 5、Day 6、Day 7、Day 8、Day 9、Day 10、Day 11、Day 12、Day 13、Day 14、Day 15は完了済み。
 
 
 
@@ -932,17 +932,57 @@ Day 0、Day 1、Day 2、Day 3、Day 4、Day 5、Day 6、Day 7、Day 8、Day 9、
 
 \---
 
+\### Day 15：HTML表示
+
+
+
+完了したこと：
+
+
+
+\- FastAPIでHTMLを返す処理を書いた
+
+\- `HTMLResponse` を使って、HTMLとしてブラウザに表示した
+
+\- `/` にアクセスして、ETF管理アプリの見出しと説明文を表示した
+
+\- `/not-found` にアクセスして、存在しないURLでは `404 Not Found` になることを確認した
+
+\- day15.py を作成・実行した
+
+\- notes/day15.md を作成済み
+
+\- Day 15の内容をcommit済み
+
+
+
+学んだこと：
+
+
+
+\- HTMLはブラウザに見出しや文章を表示するために使う
+
+\- `HTMLResponse` を使うと、FastAPIからHTMLを返せる
+
+\- `day15:app` は `day15.py` の中の `app` を起動するという意味
+
+\- 存在しないURLにアクセスすると `404 Not Found` になる
+
+
+
+\---
+
 
 
 \## 次にやること
 
 
 
-次は \*\*Day 15：HTML表示\*\*。
+次は \*\*Day 16：画面整備\*\*。
 
 
 
-Day 15では、FastAPIでHTMLを表示する方法を学ぶ。
+Day 16では、HTMLの画面を少し見やすく整える方法を学ぶ。
 
 
 
@@ -950,15 +990,15 @@ Day 15では、FastAPIでHTMLを表示する方法を学ぶ。
 
 
 
-\- HTML
+\- HTMLの基本タグ
 
-\- HTMLResponse
+\- 見出しと文章の整理
 
-\- ブラウザに文字だけでなくHTMLを返す処理
+\- 箇条書きの表示
 
-\- ETF管理アプリの画面表示の準備
+\- ETF管理アプリの画面構成の準備
 
-\- Day 14のGET / POSTとのつながり
+\- Day 15のHTML表示とのつながり
 
 
 
@@ -967,7 +1007,7 @@ Day 15では、FastAPIでHTMLを表示する方法を学ぶ。
 
 
 
-FastAPIでHTMLを返して、ブラウザに見出しや文章を表示する。
+HTMLに見出し、説明文、箇条書きを入れて、画面を少し見やすくする。
 
 
 
