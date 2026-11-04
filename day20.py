@@ -7,6 +7,8 @@ app = FastAPI()
 def show_etfs():
     connection = sqlite3.connect("etf_app.db")
     cursor = connection.cursor()
+    # Fresh clones have no runtime database; build the empty teaching schema safely.
+    cursor.execute("CREATE TABLE IF NOT EXISTS etfs (name TEXT)")
     cursor.execute("SELECT name FROM etfs")
     rows = cursor.fetchall()
     names = []
